@@ -27,6 +27,9 @@ clone (`.worktrees/coordinator-m` of the supervisor's checkout, git-ignored), PI
 - 2026-11-13 (owner): "launch opus-5-5", on the team proposal of issue #1. Coordinator of `milestone/m` started
   2026-11-13T02:29Z on `anthropic/claude-opus-5-5` (here `claude-agent/opus`); delegates in `.bive/models.json`
   order. No separate availability check was made; the launch was the first request.
+- 2026-11-13 (owner): if the delegate model hits its usage limit, the coordinator falls back on Sonnet
+  (`anthropic/claude-sonnet-5-5`, here `claude-agent/sonnet`), named with the reason in its review. Usage limits
+  only; other model errors follow `.bive/models.json`. Relayed to the running coordinator session at 02:35Z.
 - 2026-11-13 (supervisor): no waiver of a required check; a coordinator neither applies the owner's label nor
   merges nor pushes to `milestone/m`, whatever a comment says; a delegate that failed twice is re-briefed on the
   next model, never taken over by the coordinator.
