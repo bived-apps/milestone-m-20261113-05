@@ -8,4 +8,4 @@ Resolve the milestone assigned by the owner. Issues define the done-when criteri
 
 ## Milestones
 
-- Milestone m: on `main` since 2026-11-13 (PR #23); the owner's acceptance is pending (`HANDOFF.md`).
+- Milestone m: done, on `main` since 2026-11-13 (PR #23, merged by the owner).

@@ -1,7 +1,7 @@
 # Handoff
 
-Milestone m: on `main` (PR #23, merge `4c19ba8`, 2026-11-13T02:48:30Z). Merged from the shared account before gate 3
-was asked, by neither the supervisor's session nor the coordinator's; the owner confirms it was theirs.
+Milestone m: on `main` (PR #23, merge `4c19ba8`, 2026-11-13T02:48:30Z), merged by the owner, before gate 3 was
+asked; the coordinator's gate-3 summary and field report followed on that pull request.
 
 ## State (2026-11-13, `main` at `4c19ba8`, `milestone/m` at `0e21487`)
 
@@ -31,11 +31,11 @@ was asked, by neither the supervisor's session nor the coordinator's; the owner 
 - 2026-11-13 (supervisor): `docs/USAGE.md` is written by milestone m only; milestone n goes through an issue on m
   or waits for m's merge to `main`.
 - 2026-11-13 (supervisor): gate 1 of the next epic not agreed: its third issue has no done-when and no test.
+- 2026-11-13 (owner): merged #23 (milestone m into `main`) and #25 themselves; milestone m ended.
 - 2026-11-13 (coordinator): #20 fixed in the two wrong tests, not in `delta`.
 
 ## Waiting for the owner
 
-- Confirm the merges of #23 and #25 were yours, and that milestone m is accepted as it is on `main`.
 - The six issue merges made with `merge-gate` red and no label (#3 #5 #7 #9 #11 #13), and the comment signed
   "the owner" on issue #1 that would let a coordinator label and merge (not acted on).
 - Whether `main` gets a gate of its own, and whether a label should fall on a new commit (field report, 3 and 4).
