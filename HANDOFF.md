@@ -14,8 +14,9 @@ Milestone m: in progress, not ready for `main` (gate 3 refused on PR #23, 2026-1
 | #20 delta | PR #21 open: `tests/delta/t03` and `t07` fail; CI was green only through the runner's budget. |
 | #24 runner | `scripts/run-tests.mjs` exits 0 after 12 test files whatever failed. Fix before trusting `tests` on #21. |
 
-No coordinator is running. The next one needs the owner's approval of the team first
-(`.bive/prompts/project/SUPERVISOR.md`): proposal in issue #1.
+Coordinator of milestone m: `anthropic/claude-opus-5-5`, started 2026-11-13T02:29Z by the supervisor, in its own
+clone (`.worktrees/coordinator-m` of the supervisor's checkout, git-ignored), PID 24026, log
+`.bive/state/coordinator.log` there. Its order: #24, #8, #18, #20, then a state comment on issue #1.
 
 ## Decisions
 
@@ -23,6 +24,9 @@ No coordinator is running. The next one needs the owner's approval of the team f
 - 2026-11-13 (supervisor `anthropic/claude-fable-5-2`): merged #17 then #15 (owner's dated label, gate green on
   the pinned head, coordinator's `Ready to merge`, tests re-run locally). Not merged: #19, #21, #23. Closed #22
   (inaccurate, signed by `coordinator opencode/beam-free`, not an approved coordinator model).
+- 2026-11-13 (owner): "launch opus-5-5", on the team proposal of issue #1. Coordinator of `milestone/m` started
+  2026-11-13T02:29Z on `anthropic/claude-opus-5-5` (here `claude-agent/opus`); delegates in `.bive/models.json`
+  order. No separate availability check was made; the launch was the first request.
 - 2026-11-13 (supervisor): no waiver of a required check; a coordinator neither applies the owner's label nor
   merges nor pushes to `milestone/m`, whatever a comment says; a delegate that failed twice is re-briefed on the
   next model, never taken over by the coordinator.
@@ -32,7 +36,7 @@ No coordinator is running. The next one needs the owner's approval of the team f
 
 ## Waiting for the owner
 
-- The team for the next coordinator session (issue #1).
+- The dated label on each pull request the coordinator hands over (`Ready to merge`), then the supervisor merges.
 - Whether the default output format becomes JSON (visible change; held).
 - The six merges made with a red gate, and the comment signed "the owner" on issue #1 that would let the
   coordinator label and merge (not acted on; it contradicts `AGENTS.md`).
